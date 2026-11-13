@@ -4,6 +4,8 @@ import json
 from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
+matplotlib.rcParams["svg.hashsalt"]="electrochem-toolkit-study"
+matplotlib.rcParams.update({"font.size":10,"axes.spines.top":False,"axes.spines.right":False,"axes.titleweight":"semibold","axes.prop_cycle":matplotlib.cycler(color=["#156b79","#b96138","#395575","#7f8d96"])})
 import matplotlib.pyplot as plt
 from electrochem_toolkit.electrothermal import Stack,simulate
 
@@ -38,7 +40,7 @@ def main():
     ax.set(xlabel="Time / min",ylabel="Energy / MJ",title="Integrated energy balance");ax.legend(fontsize=8)
     for ax in axes.flat:ax.grid(alpha=.2)
     fig.suptitle("Illustrative dynamic electrolyser stack | lumped electrothermal model")
-    fig.savefig(out/"results.svg")
+    fig.savefig(out/"results.svg",metadata={"Date":None})
     return summary
 
 if __name__=="__main__":main()

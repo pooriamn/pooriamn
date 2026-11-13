@@ -4,6 +4,8 @@ from pathlib import Path
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")
+matplotlib.rcParams["svg.hashsalt"]="electrochem-toolkit-study"
+matplotlib.rcParams.update({"font.size":10,"axes.spines.top":False,"axes.spines.right":False,"axes.titleweight":"semibold","axes.prop_cycle":matplotlib.cycler(color=["#156b79","#b96138","#395575","#7f8d96"])})
 import matplotlib.pyplot as plt
 from electrochem_toolkit.inverse import Spectrum,response,fit
 
@@ -37,7 +39,7 @@ def main():
     ax.axhline(0,color="black",lw=.7);ax.set(xlabel="f / Hz",ylabel="Residual / σ",title="Standardised residuals");ax.legend(fontsize=8)
     for ax in axes.flat: ax.grid(alpha=.2)
     fig.suptitle("Synthetic impedance inverse problem | RC versus RQ")
-    fig.savefig(out/"results.svg")
+    fig.savefig(out/"results.svg",metadata={"Date":None})
     return summary
 
 if __name__=="__main__":main()
