@@ -23,6 +23,8 @@ I prefer building reusable tools over solving the same problem repeatedly. Good 
 ![Git](https://img.shields.io/badge/Git-263B50?style=flat-square&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-263B50?style=flat-square&logo=githubactions&logoColor=white)
 
+[![Engineering examples verification](https://github.com/pooriamn/pooriamn/actions/workflows/verify.yml/badge.svg)](https://github.com/pooriamn/pooriamn/actions/workflows/verify.yml)
+
 ## Selected technical demonstrations
 
 These small, independent examples use synthetic data and public electrochemical principles. They illustrate the types of software and automation I am interested in developing; they are not exports of proprietary systems.

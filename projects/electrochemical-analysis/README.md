@@ -2,6 +2,8 @@
 
 A minimal Python demonstration of fitting a series resistance and a parallel charge-transfer resistance / capacitance element to complex impedance data.
 
+![Synthetic Nyquist response](nyquist.svg)
+
 The model is Z = Rs + Rct / (1 + j 2πf Rct C). All resistances are in ohms, capacitance is in farads and frequency is in hertz. The example generates noise-free synthetic measurements and performs a bounded grid search using complex least squares. It is intentionally small and dependency-free.
 
 ```sh

@@ -2,6 +2,8 @@
 
 A small, dependency-free example of a repeatable experiment-data workflow: read a CSV, validate its schema and values, calculate a traceable time-weighted DC energy estimate and publish a JSON summary atomically.
 
+![Data validation and reporting workflow](workflow.svg)
+
 ```sh
 python projects/experimental-pipeline/pipeline.py projects/experimental-pipeline/sample.csv summary.json
 ```

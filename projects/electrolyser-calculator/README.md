@@ -2,6 +2,8 @@
 
 An idealised DC stack balance for series-connected electrolysis cells. Uses Faraday's law with a user-supplied Faradaic efficiency. Reports current, stack voltage, DC power, hydrogen production rate and DC specific energy.
 
+![Series stack electrical balance](stack-balance.svg)
+
 ```sh
 python projects/electrolyser-calculator/stack.py --cells 10 --area 100 --current-density 0.3 --voltage 1.8
 ```
