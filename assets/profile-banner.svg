@@ -1,8 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="400" viewBox="0 0 1600 400" role="img" aria-labelledby="title desc">
-<title id="title">Pooria Moozarm Nia</title><desc id="desc">Electrochemistry, scientific software and automation</desc>
-<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101d2b"/><stop offset="1" stop-color="#1b3445"/></linearGradient><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#a0c3cf" stroke-opacity=".09"/></pattern></defs>
-<rect width="1600" height="400" rx="18" fill="url(#bg)"/><rect x="960" width="640" height="400" fill="url(#grid)"/>
-<g fill="none" stroke="#69bfc6" stroke-width="2.5" opacity=".62"><path d="M1000 270H1080V220H1160V280H1240V140H1330V200H1420V95H1530"/><path d="M1000 315H1120V290H1220V330H1330V260H1470V305H1530" opacity=".5"/><path d="M1160 220V150H1240M1420 200V245H1490" opacity=".5"/></g>
-<g fill="#8ed5d7"><circle cx="1080" cy="220" r="5"/><circle cx="1240" cy="140" r="5"/><circle cx="1420" cy="95" r="5"/><circle cx="1330" cy="260" r="5"/></g>
-<path d="M80 83H142" stroke="#76d0d0" stroke-width="5"/>
-<g font-family="Arial,Helvetica,sans-serif"><text x="80" y="126" fill="#8ed5d7" font-size="22" letter-spacing="4">SCIENCE / ENGINEERING / SOFTWARE</text><text x="80" y="202" fill="#f4f8fa" font-weight="700" font-size="58">Pooria Moozarm Nia</text><text x="82" y="254" fill="#c9dce4" font-size="31">Electrochemist &amp; Principal Scientist</text><text x="82" y="322" fill="#a8c2ce" font-size="23">Scientific computing  ·  Automation  ·  Platform development</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="440" viewBox="0 0 1600 440" role="img" aria-labelledby="t d">
+<title id="t">Pooria Moozarm Nia — Electrochemist and Principal Scientist</title><desc id="d">Editorial navy banner featuring a stylised electrochemical impedance curve and a technical circuit motif.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0c1b28"/><stop offset="1" stop-color="#183445"/></linearGradient><pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#94b2c0" stroke-opacity=".12"/></pattern><linearGradient id="curve"><stop stop-color="#8acbc6"/><stop offset="1" stop-color="#d2e5da"/></linearGradient></defs>
+<rect width="1600" height="440" rx="16" fill="url(#bg)"/>
+<rect x="980" y="24" width="584" height="392" rx="9" fill="url(#grid)"/>
+<path d="M1015 24V416" stroke="#638493" stroke-opacity=".32"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<rect x="72" y="62" width="41" height="5" rx="2.5" fill="#89c9c4"/>
+<text x="72" y="104" fill="#a4d4cf" font-size="22" font-weight="600" letter-spacing="3">ELECTROCHEMISTRY / ENGINEERING</text>
+<text x="68" y="185" fill="#f4f7f7" font-size="67" font-weight="700" letter-spacing="-1.5">Pooria Moozarm Nia</text>
+<text x="72" y="239" fill="#d4e3e6" font-size="31">Electrochemist &amp; Principal Scientist</text>
+<path d="M72 280H914" stroke="#638493" stroke-opacity=".52"/>
+<g fill="#bed0d7" font-size="24"><text x="72" y="328">Scientific software</text><text x="325" y="328">Automation</text><text x="501" y="328">Platform development</text></g>
+<g fill="#89c9c4"><circle cx="300" cy="320" r="3"/><circle cx="476" cy="320" r="3"/></g>
+<g stroke="#7195a3" stroke-width="1.6" fill="none"><path d="M1090 300V86M1090 300H1500"/><path d="M1090 246H1500M1090 192H1500M1090 138H1500" stroke-dasharray="3 6" opacity=".6"/></g>
+<path d="M1124 300 A168 168 0 0 1 1460 300" fill="none" stroke="url(#curve)" stroke-width="4.5"/>
+<circle cx="1460.0" cy="300.0" r="4" fill="#c0e0db"/><circle cx="1451.8" cy="248.1" r="4" fill="#c0e0db"/><circle cx="1427.9" cy="201.3" r="4" fill="#c0e0db"/><circle cx="1390.7" cy="164.1" r="4" fill="#c0e0db"/><circle cx="1343.9" cy="140.2" r="4" fill="#c0e0db"/><circle cx="1292.0" cy="132.0" r="4" fill="#c0e0db"/><circle cx="1240.1" cy="140.2" r="4" fill="#c0e0db"/><circle cx="1193.3" cy="164.1" r="4" fill="#c0e0db"/><circle cx="1156.1" cy="201.3" r="4" fill="#c0e0db"/><circle cx="1132.2" cy="248.1" r="4" fill="#c0e0db"/><circle cx="1124.0" cy="300.0" r="4" fill="#c0e0db"/>
+<g stroke="#99b3be" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M1134 370h22l6 -9 12 18 12 -18 12 18 6 -9h30v-20h52v40h-52v-20M1286 350h23l6 -9 12 18 12 -18 12 18 6 -9h23v40h-24m-70 0h24m15 -8v16m9 -16v16m9 -8h13"/></g>
+<text x="1500" y="328" fill="#a4bbc4" font-size="14" text-anchor="end">IMPEDANCE · CONCEPTUAL</text>
+</g></svg>

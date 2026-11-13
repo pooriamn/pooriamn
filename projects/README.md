@@ -1,17 +1,21 @@
-# Technical demonstrations
+# Run the examples
 
-Three independent, educational examples using synthetic inputs and standard equations. No company code, experimental records or confidential data are included.
+The three projects here are small enough to read in one sitting. Each solves a different part of a typical engineering workflow, from interpreting impedance data to calculating stack performance or processing a measurement file.
 
-- [Electrochemical analysis](electrochemical-analysis/README.md)
-- [Electrolyser calculator](electrolyser-calculator/README.md)
-- [Experimental pipeline](experimental-pipeline/README.md)
+| Example | Start here |
+| --- | --- |
+| Electrochemical analysis | [Model, assumptions and command](electrochemical-analysis/README.md) |
+| Electrolyser calculator | [Inputs, equations and outputs](electrolyser-calculator/README.md) |
+| Experimental data pipeline | [Sample data and reporting workflow](experimental-pipeline/README.md) |
 
-## Run the verification suite
+All three run on Python 3.10 or newer using only the standard library.
 
-Python 3.10 or newer; no external dependencies.
+From the repository root, run the tests with:
 
 ```sh
 python -m unittest discover -s tests -v
 ```
 
-Run from the repository root. Each project has a separate command-line entry point and documented assumptions. These demonstrations are not validated production tools, and must not be used to control equipment or establish safety limits.
+The same suite runs in [GitHub Actions](https://github.com/pooriamn/pooriamn/actions/workflows/verify.yml).
+
+These are educational examples, not production software. They use synthetic inputs and are not intended for equipment control, safety limits or engineering sign-off.

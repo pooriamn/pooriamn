@@ -1,42 +1,35 @@
-![Pooria Moozarm Nia — Electrochemistry, scientific software and automation](assets/profile-banner.svg)
+![Pooria Moozarm Nia — electrochemist, scientific software and automation](assets/profile-banner.svg)
 
 # Pooria Moozarm Nia
 
-**Electrochemist & Principal Scientist | Scientific Computing, Software Engineering & Automation**
+**Electrochemist & Principal Scientist | Electrochemical engineering, software & automation**
 
-I am an electrochemist with a PhD in Analytical Chemistry and over a decade of experience in electrochemical engineering, energy materials and industrial technology development.
+I'm an electrochemist with a PhD in Analytical Chemistry and more than a decade of experience in academic and industrial R&D. Most of my work has been in electrochemical energy technologies, from electrode materials and electrochemical diagnostics to test rigs, cell and stack development, and industrial scale-up.
 
-I develop electrochemical systems and build the software and automated platforms around them: from experimental rigs and instrument integration to data pipelines, diagnostics and engineering dashboards. I enjoy making complicated processes easier to run, understand and improve.
+I also write software. I often find that developing the technology is only half the job: someone still has to run the experiments, make sense of the data and keep the whole process working. That's the part I enjoy building around.
 
-## Engineering & electrochemistry
+## What I work on
 
-Water electrolysers, hydrogen production, batteries, fuel cells and redox-flow systems. My work spans electrode engineering, electrochemical diagnostics, cell and stack development, automated testing, validation and industrial scale-up.
-
-## Software & automation
-
-I primarily develop in Python and MATLAB. I work on numerical modelling, impedance analysis, parameter estimation, time-series processing and scientific applications. On the engineering side, I am interested in modular software, APIs, data validation, automated testing, workflow orchestration and reliable integration between instruments and platforms.
-
-I prefer building reusable tools over solving the same problem repeatedly. Good automation should make the underlying process easier to operate, not harder to understand.
-
-![Python](https://img.shields.io/badge/Python-263B50?style=flat-square&logo=python&logoColor=white)
-![MATLAB](https://img.shields.io/badge/MATLAB-263B50?style=flat-square)
-![Git](https://img.shields.io/badge/Git-263B50?style=flat-square&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-263B50?style=flat-square&logo=githubactions&logoColor=white)
-
-[![Engineering examples verification](https://github.com/pooriamn/pooriamn/actions/workflows/verify.yml/badge.svg)](https://github.com/pooriamn/pooriamn/actions/workflows/verify.yml)
-
-## Selected technical demonstrations
-
-These small, independent examples use synthetic data and public electrochemical principles. They illustrate the types of software and automation I am interested in developing; they are not exports of proprietary systems.
-
-| Project | Focus |
+| Electrochemistry & engineering | Software & automation |
 | --- | --- |
-| [Electrochemical analysis toolkit](projects/electrochemical-analysis/README.md) | Python impedance modelling, synthetic data and parameter fitting |
-| [Electrolyser engineering calculator](projects/electrolyser-calculator/README.md) | Stack sizing, hydrogen production and electrical energy balance |
-| [Experimental data pipeline](projects/experimental-pipeline/README.md) | CSV validation, reproducible reporting and safe automated processing |
+| Water electrolysis, batteries, fuel cells and redox-flow systems | Scientific applications and numerical modelling in Python and MATLAB |
+| Electrode engineering, EIS, kinetics and durability | Impedance fitting, parameter estimation and time-series analysis |
+| Experimental rigs, instrumentation and stack validation | Instrument integration, APIs, data pipelines and automated testing |
+| Process development and industrial scale-up | Engineering dashboards, workflow orchestration and platform development |
 
-[View the portfolio source](docs/index.html) · [Run the examples and tests](projects/README.md)
+I like writing tools that are useful long after the first experiment: code that can be tested, maintained and used by someone else without having to reconstruct the original workflow.
 
-Outside work, I enjoy photography, particularly architecture, light and perspective.
+## A few things you can try
 
-Based in London, United Kingdom.
+| Project | What it does |
+| --- | --- |
+| [Electrochemical analysis](projects/electrochemical-analysis/README.md) | Fits a simple equivalent circuit to synthetic impedance data and recovers its parameters. |
+| [Electrolyser calculator](projects/electrolyser-calculator/README.md) | Works out a stack's DC power, hydrogen output and specific energy from a few operating inputs. |
+| [Experimental data pipeline](projects/experimental-pipeline/README.md) | Checks a measurement file, integrates its energy and writes a repeatable report. |
+
+These examples are deliberately small. They use synthetic data and standard equations, so you can run them without access to laboratory equipment or proprietary software.
+
+[![Tests](https://github.com/pooriamn/pooriamn/actions/workflows/verify.yml/badge.svg)](https://github.com/pooriamn/pooriamn/actions/workflows/verify.yml)
+[Run the examples](projects/README.md) · [Portfolio website source](docs/index.html)
+
+I'm based in London, UK. Away from work, I spend a fair amount of time with a camera, mostly photographing architecture, light and perspective.

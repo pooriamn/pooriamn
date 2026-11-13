@@ -1,15 +1,29 @@
-# Electrochemical analysis toolkit
+# Electrochemical analysis
 
-A minimal Python demonstration of fitting a series resistance and a parallel charge-transfer resistance / capacitance element to complex impedance data.
+When interpreting an impedance spectrum, I like to start with the simplest circuit that can explain the response before adding more parameters. This example uses a series resistance and a parallel resistance–capacitance element.
 
-![Synthetic Nyquist response](nyquist.svg)
+![Calculated Nyquist response, with model parameters and equal physical axis scales](nyquist.svg)
 
-The model is Z = Rs + Rct / (1 + j 2πf Rct C). All resistances are in ohms, capacitance is in farads and frequency is in hertz. The example generates noise-free synthetic measurements and performs a bounded grid search using complex least squares. It is intentionally small and dependency-free.
+## Run it
+
+From the repository root:
 
 ```sh
 python projects/electrochemical-analysis/impedance.py
 ```
 
-The example reports the best parameter combination and residual. A fit does not establish that the circuit is physically unique. The model omits diffusion, inductance, distributed capacitance and non-stationarity; real measurements require independent validation, residual analysis and uncertainty assessment.
+The script generates a noise-free synthetic spectrum, fits it with a bounded grid search and prints the recovered values of Rs, Rct and C alongside the mean squared complex residual.
 
-See [source](impedance.py) and [tests](../../tests/test_demos.py).
+## The model
+
+`Z(f) = Rs + Rct / (1 + j·2πf·Rct·C)`
+
+Frequency is in Hz, resistance in Ω and capacitance in F. The synthetic values are Rs = 0.2 Ω, Rct = 1.5 Ω and C = 0.01 F. The characteristic frequency is 1/(2πRctC), approximately 10.61 Hz.
+
+The fitting routine is intentionally transparent and has no external dependencies. It searches the supplied parameter grids; it is not a general-purpose optimiser.
+
+## What to watch for
+
+Real impedance spectra may include diffusion, inductance, non-ideal capacitance and changes in the operating state. A low residual on its own is not evidence that the fitted circuit represents the actual mechanism. Check the model assumptions, parameter identifiability, residuals and measurement validity before interpreting real data.
+
+[Source code](impedance.py) · [Verification tests](../../tests/test_demos.py)
