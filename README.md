@@ -31,7 +31,7 @@ I am particularly interested in turning individual analytical scripts into relia
 
 ## Automation & Platform Development
 
-Much of my work involves building systems around existing systems — connecting instruments, software, data and engineering workflows to reduce manual work and improve reliability.
+Much of my work involves building systems around existing systems, connecting instruments, software, data and engineering workflows to reduce manual work and improve reliability.
 
 - Automated experimental platforms, instrument control and data acquisition.
 - End-to-end workflows for data processing, analysis, visualisation and reporting.
@@ -52,4 +52,4 @@ Outside work, I enjoy photography, particularly architecture, light and perspect
 
 ---
 
-Based in Oxfordshire, United Kingdom.
+Based in London, United Kingdom.
