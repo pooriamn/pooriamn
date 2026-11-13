@@ -25,15 +25,18 @@ I've collected the examples into an [installable Python toolkit](toolkit/README.
 
 [Changelog](CHANGELOG.md) · [Releases](https://github.com/pooriamn/pooriamn/releases) · [Development notes](journal/README.md) · [Reusable snippets](snippets/README.md)
 
-## A few things you can try
+## Selected computational studies
 
-| Project | What it does |
+These are the parts of the public toolkit where I have put more emphasis on the actual electrochemical problem and the numerical implementation.
+
+| Study | Approach |
 | --- | --- |
-| [Electrochemical analysis](projects/electrochemical-analysis/README.md) | Fits a simple equivalent circuit to synthetic impedance data and recovers its parameters. |
-| [Electrolyser calculator](projects/electrolyser-calculator/README.md) | Works out a stack's DC power, hydrogen output and specific energy from a few operating inputs. |
-| [Experimental data pipeline](projects/experimental-pipeline/README.md) | Checks a measurement file, integrates its energy and writes a repeatable report. |
+| [Electrochemical inverse modelling](studies/eis-inverse/README.md) | Constrained complex nonlinear least squares, analytic Jacobian, model discrimination, multistart fitting and local parameter uncertainty. |
+| [Dynamic electrolyser electrothermal model](studies/electrothermal-stack/README.md) | Thermodynamics, apparent electrode kinetics, temperature-dependent ASR, dynamic heat balance and numerical conservation checks. |
 
-These examples are deliberately small. They use synthetic data and standard equations, so you can run them without access to laboratory equipment or proprietary software.
+Each study includes the model assumptions, reproducible synthetic inputs, source code, diagnostics and verification tests. Neither uses proprietary measurements or claims industrial validation.
+
+[Explore the computational studies](studies/README.md) · [Introductory examples](projects/README.md)
 
 [![Tests](https://github.com/pooriamn/pooriamn/actions/workflows/verify.yml/badge.svg)](https://github.com/pooriamn/pooriamn/actions/workflows/verify.yml)
 [Run the examples](projects/README.md) · [Portfolio website source](docs/index.html)

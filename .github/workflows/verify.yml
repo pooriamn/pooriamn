@@ -17,7 +17,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - run: python -m pip install .
+      - run: python -m pip install '.[advanced]'
+      - run: python -c 'from electrochem_toolkit import inverse, electrothermal; import matplotlib'
       - run: python -m unittest discover -s tests -v
       - run: electrochem-toolkit stack --cells 10 --area 100 --density 0.3 --voltage 1.8
       - run: electrochem-toolkit impedance --frequency 10 --rs 0.2 --rct 1.5 --capacitance 0.01
@@ -26,3 +27,49 @@ jobs:
       - run: python projects/electrochemical-analysis/impedance.py
       - run: python projects/electrolyser-calculator/stack.py --cells 10 --area 100 --current-density 0.3 --voltage 1.8
       - run: python projects/experimental-pipeline/pipeline.py projects/experimental-pipeline/sample.csv summary.json
+
+      - run: python studies/eis-inverse/run.py
+      - run: python studies/electrothermal-stack/run.py
+      - uses: actions/upload-artifact@v4
+        if: matrix.python-version == '3.12'
+        with:
+          name: computational-study-results
+          path: study-output/
+          if-no-files-found: error
+  publish-studies:
+    needs: tests
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.repository == 'pooriamn/pooriamn'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: publish-computational-studies
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          name: computational-study-results
+          path: generated
+      - name: Publish verified numerical outputs
+        run: |
+          set -eu
+          # Do not publish results from a different scientific implementation.
+          git diff --quiet "$GITHUB_SHA" HEAD -- src/electrochem_toolkit/inverse.py src/electrochem_toolkit/electrothermal.py studies/eis-inverse/run.py studies/electrothermal-stack/run.py pyproject.toml
+          cp generated/eis/results.svg studies/eis-inverse/results.svg
+          cp generated/eis/summary.json studies/eis-inverse/summary.json
+          cp generated/electrothermal/results.svg studies/electrothermal-stack/results.svg
+          cp generated/electrothermal/summary.json studies/electrothermal-stack/summary.json
+          cp generated/electrothermal/timeseries.csv studies/electrothermal-stack/timeseries.csv
+          git add studies/eis-inverse/results.svg studies/eis-inverse/summary.json studies/electrothermal-stack/results.svg studies/electrothermal-stack/summary.json studies/electrothermal-stack/timeseries.csv
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Publish verified computational study outputs"
+          git fetch origin main
+          git diff --quiet "$GITHUB_SHA" origin/main -- src/electrochem_toolkit/inverse.py src/electrochem_toolkit/electrothermal.py studies/eis-inverse/run.py studies/electrothermal-stack/run.py pyproject.toml
+          git rebase origin/main
+          git push origin HEAD:main

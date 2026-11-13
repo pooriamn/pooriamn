@@ -34,12 +34,19 @@ print(result["dc_specific_energy_kWh_kg"])
 | polarisation | Linear Tafel regression for a manually selected valid region |
 | pipeline | Validated CSV processing, energy integration, atomic JSON reports |
 
+## Advanced computational studies
+
+Install the optional numerical dependencies with `python -m pip install ".[advanced]"`.
+
+- [EIS inverse modelling](../studies/eis-inverse/README.md): constrained complex fitting, analytic Jacobian, model selection and local parameter uncertainty.
+- [Electrothermal stack simulation](../studies/electrothermal-stack/README.md): temperature-dependent electrochemical losses, time-domain heat balance and conservation diagnostics.
+
 ## Design and validation
 
-The calculation layer uses only the Python standard library. Inputs are explicitly validated, units are documented and the examples use synthetic data. Run `python -m unittest discover -s tests -v` after installation. See the [development notes](../journal/README.md) for the reasoning behind several design choices.
+The introductory calculation layer uses only the Python standard library; advanced studies use NumPy, SciPy and Matplotlib. Inputs are explicitly validated, units are documented and the examples use synthetic data. Run `python -m unittest discover -s tests -v` after installation. See the [development notes](../journal/README.md) for the reasoning behind several design choices.
 
 The [browser workbench](../docs/toolkit.html) provides independent JavaScript demonstrations of the same equations; it does not call the Python package or an external service.
 
 ## Scope
 
-Version 0.1.0 is an initial educational release. This is not a general EIS fitting package, a battery state estimator, an electrolyser design model or a control system. Tafel region selection and measurement validity remain the user's responsibility. No private company code or data are included. For scientific or engineering sign-off, validate the model against independent reference data and the intended operating conditions.
+Version 0.2.0 includes introductory tools and advanced synthetic computational studies. This is not a general EIS fitting package, a battery state estimator, an electrolyser design model or a control system. Tafel region selection and measurement validity remain the user's responsibility. No private company code or data are included. For scientific or engineering sign-off, validate the model against independent reference data and the intended operating conditions.
