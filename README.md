@@ -1,4 +1,4 @@
-# Dr Pooria Moozarm Nia
+# Pooria Moozarm Nia
 
 **Principal Scientist | Electrochemical Engineering | Scientific Software & Automation**
 
