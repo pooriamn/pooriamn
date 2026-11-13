@@ -6,3 +6,5 @@ Short notes on practical scientific software and engineering decisions. These ar
 - [A report should survive a bad input file](data-pipeline.md)
 - [Where to draw the stack energy boundary](stack-energy.md)
 - [Keeping the calculation layer separate from the interface](toolkit-design.md)
+
+- [Restricted diffusion: an upstream contribution candidate](restricted-diffusion.md)

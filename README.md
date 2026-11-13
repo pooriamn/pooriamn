@@ -46,4 +46,8 @@ These examples are deliberately small. They use synthetic data and standard equa
 
 The activity summary reports only this public repository. My private work remains private.
 
+## Publications & profiles
+
+[Google Scholar](https://scholar.google.com/citations?user=SaiB5-8AAAAJ) · [ORCID](https://orcid.org/0000-0002-3049-3120)
+
 I'm based in London, UK. Away from work, I spend a fair amount of time with a camera, mostly photographing architecture, light and perspective.
