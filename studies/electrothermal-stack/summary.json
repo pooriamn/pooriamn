@@ -1,0 +1,9 @@
+{
+  "peak_temperature_K": 318.1424163914416,
+  "final_temperature_K": 304.1028492979691,
+  "max_abs_balance_residual_J": 4.48198989033699e-09,
+  "final_dc_energy_J": 5376607.9404914165,
+  "final_chemical_energy_J": 4710246.521562166,
+  "final_heat_loss_J": 559210.1315658087,
+  "final_thermal_storage_J": 107151.28736344422
+}
