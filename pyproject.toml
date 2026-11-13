@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "electrochemical-engineering-toolkit"
+version = "0.1.0"
+description = "Practical electrochemical calculations and experimental data tools"
+readme = "toolkit/README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Pooria Moozarm Nia"}]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/pooriamn/pooriamn"
+
+[project.scripts]
+electrochem-toolkit = "electrochem_toolkit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

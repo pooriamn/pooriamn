@@ -19,6 +19,12 @@ I also write software. I often find that developing the technology is only half 
 
 I like writing tools that are useful long after the first experiment: code that can be tested, maintained and used by someone else without having to reconstruct the original workflow.
 
+## Public engineering workbench
+
+I've collected the examples into an [installable Python toolkit](toolkit/README.md), with a shared calculation layer, command-line tools and a [browser workbench](docs/toolkit.html). The aim is to make common engineering calculations easy to repeat and integrate into other tools.
+
+[Changelog](CHANGELOG.md) · [Releases](https://github.com/pooriamn/pooriamn/releases) · [Development notes](journal/README.md) · [Reusable snippets](snippets/README.md)
+
 ## A few things you can try
 
 | Project | What it does |
@@ -31,5 +37,13 @@ These examples are deliberately small. They use synthetic data and standard equa
 
 [![Tests](https://github.com/pooriamn/pooriamn/actions/workflows/verify.yml/badge.svg)](https://github.com/pooriamn/pooriamn/actions/workflows/verify.yml)
 [Run the examples](projects/README.md) · [Portfolio website source](docs/index.html)
+
+## Development activity
+
+![Public development summary](assets/public-activity.svg)
+
+[Public activity details](activity/README.md) · [Issues](https://github.com/pooriamn/pooriamn/issues) · [Pull requests](https://github.com/pooriamn/pooriamn/pulls)
+
+The activity summary reports only this public repository. My private work remains private.
 
 I'm based in London, UK. Away from work, I spend a fair amount of time with a camera, mostly photographing architecture, light and perspective.

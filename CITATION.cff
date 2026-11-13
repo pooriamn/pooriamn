@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use these examples, please cite this software."
+title: "Electrochemical Engineering Toolkit"
+type: software
+authors:
+  - family-names: "Moozarm Nia"
+    given-names: "Pooria"
+version: "0.1.0"
+repository-code: "https://github.com/pooriamn/pooriamn"
+license: MIT
