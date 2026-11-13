@@ -5,6 +5,6 @@ type: software
 authors:
   - family-names: "Moozarm Nia"
     given-names: "Pooria"
-version: "0.1.0"
+version: "0.2.0"
 repository-code: "https://github.com/pooriamn/pooriamn"
 license: MIT

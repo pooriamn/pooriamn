@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - run: python -m pip install .
+      - run: python -m pip install '.[advanced]'
       - run: python -m unittest discover -s tests -v
       - run: electrochem-toolkit stack --cells 10 --area 100 --density 0.3 --voltage 1.8
       - run: electrochem-toolkit impedance --frequency 10 --rs 0.2 --rct 1.5 --capacitance 0.01
@@ -26,3 +26,6 @@ jobs:
       - run: python projects/electrochemical-analysis/impedance.py
       - run: python projects/electrolyser-calculator/stack.py --cells 10 --area 100 --current-density 0.3 --voltage 1.8
       - run: python projects/experimental-pipeline/pipeline.py projects/experimental-pipeline/sample.csv summary.json
+
+      - run: python studies/eis-inverse/run.py
+      - run: python studies/electrothermal-stack/run.py

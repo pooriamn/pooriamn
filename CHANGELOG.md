@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0
+
+- Advanced EIS inverse modelling with analytic Jacobian, constrained multistart optimisation, RC/RQ comparison, AICc and local identifiability/uncertainty diagnostics.
+- Dynamic electrolyser electrothermal model with Nernst pressure correction, apparent Butler–Volmer kinetics, Arrhenius ASR, energy-state integration and temperature-domain events.
+- Reproducible synthetic computational studies and numerical verification; optional advanced dependencies.
+- Introductory examples retained as quickstarts.
+
 ## 0.1.0
 
 First versioned public toolkit.
