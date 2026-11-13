@@ -1,116 +1,140 @@
-# Pooria Moozarm Nia
+# Dr Pooria Moozarm Nia
 
-**Principal Scientist · Electrochemistry · Energy Materials · Scientific Computing & Automation**
+**Principal Scientist | Electrochemical Engineering | Scientific Software & Automation**
 
-My work sits at the intersection of electrochemistry, materials science, engineering and computation, with a focus on developing technologies for energy conversion and storage.
+I am an electrochemist and engineer with a PhD in Analytical Chemistry and over a decade of experience developing electrochemical technologies across academia and industry.
 
-I hold a PhD in Analytical Chemistry and have spent over a decade working across academic research and industrial R&D. My experience ranges from investigating electrochemical reaction mechanisms and engineering functional electrode materials to developing experimental platforms, computational tools and industrial electrochemical systems.
+My background is in electrochemistry, energy materials and industrial R&D, but much of what I do today extends beyond the science itself. I build experimental systems, develop software, automate workflows and create the infrastructure that helps scientists and engineers work more effectively.
 
-What interests me most is understanding how materials, interfaces and operating conditions influence the performance and lifetime of electrochemical systems and how that understanding can be translated into better engineering decisions.
+I am a practical scientist. I enjoy understanding how things work, identifying where processes become unnecessarily complicated, and building solutions that make them simpler, more reliable and easier to scale.
 
-## Research and engineering
+## What I do
 
-My research and engineering experience covers several interconnected areas:
+My work brings together electrochemistry, engineering, programming and automation.
 
-- **Water electrolysis and hydrogen production:** electrode and electrocatalyst development, cell and stack characterisation, performance optimisation and technology scale-up.
-- **Electrochemical energy storage:** batteries and redox-flow systems, charge-transfer processes, degradation mechanisms and performance diagnostics.
-- **Electrode and interface engineering:** electrochemical deposition, surface modification, functional materials and structure–performance relationships.
-- **Electrochemical characterisation:** impedance spectroscopy, reaction kinetics, transport phenomena and accelerated durability testing.
-- **Experimental and systems engineering:** test platform development, instrumentation, automated experimentation and electrochemical system validation.
+I have worked on technologies ranging from electrode materials and electrochemical reactors to batteries, fuel cells and water electrolysers. My experience covers the development of experimental platforms, performance diagnostics, process optimisation and the transition from laboratory-scale experiments to industrial systems.
 
-## Scientific computing and computational electrochemistry
+Alongside the technical development of these technologies, I build the tools and systems needed to support them.
 
-Computation is an integral part of my research. I develop computational approaches to extract physically meaningful information from experimental data, investigate system behaviour and guide experimental and engineering decisions.
+That might mean automating an experimental test rig, developing software to process and interpret electrochemical data, creating a platform to monitor system performance, or connecting otherwise independent research and engineering workflows into a single, reliable system.
 
-My work and interests include:
+## Building systems around systems
 
-- Physics-based modelling of electrochemical processes and energy systems.
-- Numerical simulation of electrode kinetics, mass transport and electrochemical performance.
-- Electrochemical impedance modelling, equivalent circuit analysis and parameter identification.
-- Model fitting, parameter estimation, numerical optimisation and uncertainty analysis.
-- Statistical experimental design, sensitivity analysis and process optimisation.
-- Time-series analysis of electrochemical performance, ageing and degradation.
-- Computational approaches to battery state estimation, including state of charge and state of health.
-- Data-driven materials development and electrochemical system optimisation.
+One of my main interests is building the infrastructure around scientific and engineering systems.
 
-I primarily work with Python and MATLAB, combining numerical methods, statistical analysis and experimental data to develop practical research and engineering tools.
+Developing a technology is only part of the challenge. Testing it, monitoring it, managing its data, interpreting its performance and turning that information into decisions are equally important.
 
-I am particularly interested in the reliability of computational interpretation: whether a model is physically meaningful, whether its parameters are identifiable, and whether its predictions remain valid beyond the conditions under which it was developed.
+I build software and automated workflows to connect these processes.
 
-## Software development and scientific data engineering
+My focus includes:
 
-Alongside my experimental work, I develop software to address practical research and engineering problems. My interest is not simply in analysing individual datasets, but in building reliable computational workflows that can be reused, extended and integrated into larger research programmes.
+- Automated experimental platforms and instrument integration.
+- Scientific data acquisition, processing and validation.
+- Performance monitoring and engineering dashboards.
+- Computational tools for electrochemical diagnostics and system analysis.
+- Automated reporting and technical documentation.
+- Experimental databases and structured data management.
+- Research and engineering workflow orchestration.
+- Integration between software platforms, instruments and information systems.
+- Knowledge management systems that preserve technical information and make it accessible when needed.
 
-Areas of development include:
+I prefer building reusable systems over repeatedly solving the same problem. If a process requires the same manual intervention every day, there is usually an opportunity to improve it.
 
-- Modular scientific software and reusable analytical libraries.
-- Automated data ingestion, cleaning, transformation and validation.
-- Structured processing of large experimental and time-series datasets.
-- Integration of experimental instrumentation with computational analysis workflows.
-- Application programming interfaces and integration between research tools and data platforms.
-- Interactive scientific dashboards and engineering decision-support tools.
-- Version-controlled research software, automated testing and reproducible computational environments.
-- Structured data models, metadata management and experimental traceability.
+## Scientific software and computational engineering
 
-I am interested in software architecture that separates data acquisition, processing, modelling and interpretation, allowing individual components to evolve without compromising the reliability of the wider system.
+I use programming as an engineering tool.
 
-For me, scientific software should be more than functional code. It should be traceable, testable and sufficiently well documented that another researcher can understand its assumptions, reproduce its results and build upon it.
+My work with Python and MATLAB is driven by practical scientific and engineering requirements, from processing experimental measurements to developing computational models and building automated analytical platforms.
 
-## Research automation and computational infrastructure
+Areas of interest include:
 
-A growing part of my work involves designing automated systems that connect experimental research, data analysis, scientific literature and technical knowledge.
+- Electrochemical system modelling and numerical simulation.
+- Impedance spectroscopy analysis and parameter identification.
+- Battery and electrolyser performance analysis.
+- Degradation modelling and long-term performance monitoring.
+- Statistical analysis, experimental design and process optimisation.
+- Scientific data pipelines and automated analytical workflows.
+- Development of interactive applications and technical dashboards.
+- API-based integration between scientific and engineering platforms.
+- Modular software architecture and reproducible computational environments.
 
-I am particularly interested in reducing the amount of repetitive work involved in research while improving the consistency and reliability of scientific outputs.
+I am particularly interested in developing scientific software that remains useful outside the context in which it was originally written.
 
-My work in this area includes:
+A good analytical script solves a problem once. A well-designed platform allows other people to solve similar problems repeatedly, consistently and with less effort.
 
-- Automated experimental data acquisition and processing.
-- Programmable electrochemical testing and instrument integration.
-- Scheduled data analysis, reporting and research workflows.
-- Automated scientific literature discovery, evidence assessment and knowledge synthesis.
-- Integration of research databases, repositories and knowledge-management platforms.
-- Version-controlled knowledge systems for long-term research and engineering programmes.
-- Automated documentation, technical reporting and experimental record management.
-- Workflow orchestration, validation, error handling and recovery mechanisms.
+## Electrochemistry and energy technologies
 
-These interests extend beyond individual scripts to the design of interconnected systems in which experimental data, scientific evidence, computational analysis and technical decisions remain linked and traceable.
+My technical background provides the foundation for the systems I develop.
 
-I am particularly interested in developing research infrastructure that preserves institutional knowledge, improves reproducibility and allows scientists and engineers to spend more time investigating problems rather than managing information.
+**Electrochemical engineering**
 
-## From materials to systems
+Water electrolysis, hydrogen production, batteries, fuel cells, redox-flow systems, electrochemical reactors, cell and stack development.
 
-Having worked in both academic and industrial environments, I am interested in the challenges that emerge when promising laboratory results are translated into practical technologies.
+**Materials and interfaces**
 
-These challenges extend beyond material performance. They involve manufacturing reproducibility, current distribution, mass and heat transfer, system integration, operational stability and the constraints imposed by real engineering environments.
+Electrode engineering, electrocatalysis, electrochemical deposition, surface modification, functional materials and degradation mechanisms.
 
-My approach combines fundamental electrochemical understanding with experimental validation, numerical modelling and consideration of the wider system.
+**Characterisation and diagnostics**
 
-Increasingly, I see computational tools and automated research infrastructure as essential parts of this process, particularly when developing technologies that require large experimental programmes, long-duration testing and decisions based on multiple sources of evidence.
+Electrochemical impedance spectroscopy, reaction kinetics, mass transport, polarisation analysis and durability assessment.
+
+**Industrial development**
+
+Experimental platform design, instrumentation, process engineering, technology validation, manufacturing reproducibility and scale-up.
+
+My experience across these areas allows me to develop computational and automated systems with a clear understanding of the underlying physical processes, rather than treating scientific data as an abstract software problem.
+
+## Automation and infrastructure
+
+I am increasingly interested in how automation can change the way scientific and engineering teams operate.
+
+Beyond automating individual tasks, I work on connecting entire workflows: from collecting information and generating experimental data to analysing results, maintaining technical knowledge and producing actionable outputs.
+
+This includes building systems that bring together:
+
+- Experimental instrumentation and data acquisition.
+- Computational analysis and modelling.
+- Databases and structured technical information.
+- Scientific evidence and literature.
+- Project documentation and engineering decisions.
+- Automated reporting, validation and monitoring.
+
+My approach is to make these systems as independent, maintainable and reliable as possible, with particular attention to traceability, error handling and the ability to recover when something fails.
+
+Automation should reduce complexity for the people using a system, not simply move that complexity somewhere else.
+
+## How I approach problems
+
+Understand the problem before choosing the technology.
+
+Build something that works, test it under realistic conditions, and improve it based on evidence.
+
+Keep the underlying system understandable. Avoid unnecessary complexity, and automate where automation provides a genuine benefit.
+
+I value solutions that are practical, maintainable and useful to the people working with them.
 
 ## On GitHub
 
-This space brings together my interests in electrochemical research, scientific software, computational engineering and research automation.
+This is where I develop and explore software, computational tools and automated systems for scientific and engineering applications.
 
-I use GitHub to develop and maintain computational tools, explore modelling approaches, document scientific methodologies and build structured workflows for research and engineering.
+My repositories reflect my interests in:
 
-My interests here include:
+- Scientific software development.
+- Electrochemical data analysis and modelling.
+- Experimental automation and instrument integration.
+- Research and engineering platforms.
+- Data pipelines and system monitoring.
+- Computational infrastructure and workflow orchestration.
+- Technical knowledge management.
 
-- Electrochemical modelling and simulation.
-- Scientific computing libraries and analytical tools.
-- Experimental data pipelines and automated analysis.
-- Research automation and workflow orchestration.
-- Battery, fuel cell and electrolyser performance modelling.
-- Scientific knowledge management and computational research infrastructure.
-- Reproducible methods for experimental and industrial R&D.
+The common thread is building tools that make complex scientific and engineering processes easier to manage, understand and improve.
 
-My aim is to develop software that is useful beyond a single experiment or research project, with particular attention to scientific validity, reproducibility and long-term maintainability.
+## Outside work
 
-## Outside the laboratory
-
-I have a long-standing interest in photography, particularly the observation of light, structure and detail.
+Photography is another important part of my life. I enjoy observing how light, structure and perspective change the way we see familiar things.
 
 ---
 
-Based in Oxfordshire, United Kingdom.
+Based in London, United Kingdom.
 
-*Electrochemical science, understood through experimentation, computation and engineering.*
+**Understanding the science. Engineering the solution. Building the systems around it.**
