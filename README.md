@@ -27,7 +27,7 @@ I've collected the examples into an [installable Python toolkit](toolkit/README.
 
 ## Selected computational studies
 
-These are the parts of the public toolkit where I have put more emphasis on the actual electrochemical problem and the numerical implementation.
+I use these studies to explore two problems that matter in electrochemical engineering: what an impedance spectrum can tell us about a system, and how electrochemical losses affect stack behaviour under changing load.
 
 | Study | Approach |
 | --- | --- |
