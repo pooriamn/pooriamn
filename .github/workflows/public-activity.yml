@@ -1,0 +1,44 @@
+name: Refresh public activity
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [scripts/public_activity.py, ".github/workflows/public-activity.yml"]
+  issues:
+    types: [opened, closed, reopened]
+  pull_request:
+    types: [closed]
+  workflow_run:
+    workflows: ["Publish toolkit release"]
+    types: [completed]
+permissions:
+  contents: write
+concurrency:
+  group: public-activity-main
+  cancel-in-progress: false
+jobs:
+  refresh:
+    if: github.repository == 'pooriamn/pooriamn' && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -s tests -p test_public_activity.py -v
+      - run: python scripts/public_activity.py
+      - name: Publish only changed public snapshot
+        run: |
+          git add activity/snapshot.json assets/public-activity.svg docs/assets/public-activity.svg
+          if git diff --cached --quiet; then
+            echo "No meaningful activity change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh public repository activity snapshot"
+          git push origin HEAD:main
