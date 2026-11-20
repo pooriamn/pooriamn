@@ -45,6 +45,6 @@ The full list of 29 papers is on [Google Scholar](https://scholar.google.com/cit
 
 ### Elsewhere
 
-I'm on [LinkedIn](https://uk.linkedin.com/in/pooriamn) for work, and on [Instagram](https://www.instagram.com/pooriamn/) when I've been out with a camera, usually photographing architecture, light and perspective.
+My personal site is [pooriamn.github.io](https://pooriamn.github.io/). I'm on [LinkedIn](https://uk.linkedin.com/in/pooriamn) for work, and on [Instagram](https://www.instagram.com/pooriamn/) when I've been out with a camera, usually photographing architecture, light and perspective.
 
 Based in London. I'm always happy to talk about electrolysis, flow batteries, EIS or lab automation. Open an issue on the toolkit, or find me on LinkedIn.
