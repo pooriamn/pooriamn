@@ -30,7 +30,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: python -m unittest discover -s tests -p test_public_activity.py -v
-      - run: python scripts/public_activity.py
+      - name: Refresh public repository activity
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/public_activity.py
       - name: Publish only changed public snapshot
         run: |
           git add activity/snapshot.json assets/public-activity.svg docs/assets/public-activity.svg
