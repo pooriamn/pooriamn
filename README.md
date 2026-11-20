@@ -15,7 +15,7 @@ I also write a lot of software. Developing the technology turns out to be only h
 
 - [Impedance fitting](https://github.com/pooriamn/electrochem-toolkit/tree/main/studies/eis-inverse): when is a constant-phase element actually justified?
 - [Electrolyser heat balance](https://github.com/pooriamn/electrochem-toolkit/tree/main/studies/electrothermal-stack): where the heat goes in a stack under a step load
-- [Vanadium flow battery](https://github.com/pooriamn/electrochem-toolkit/tree/main/studies/flow-battery): how hard to pump, and what remixing really recovers
+- [Flow battery](https://github.com/pooriamn/electrochem-toolkit/tree/main/studies/flow-battery): how hard to pump, and what remixing really recovers, for any chemistry
 - [Corrosion rate](https://github.com/pooriamn/electrochem-toolkit/tree/main/studies/corrosion): when Tafel extrapolation and LPR can be trusted, and when they can't
 - [Tafel analysis](https://github.com/pooriamn/electrochem-toolkit/tree/main/studies/tafel-analysis): one sweep, six slopes, and what to report instead
 
