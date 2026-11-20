@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0
+
+- Added independently integrated charge (Ah) and time-averaged current (A) to experimental CSV reports, while retaining existing report fields and validation rules.
+- Applied the same calculation to the installable toolkit and standalone experimental example; added synthetic regression tests for uneven sampling, changing voltage and zero current.
+- Clarified endpoint-trapezoid assumptions and the limits of missing-data interpretation. This release does not estimate Faradaic efficiency or gas production.
+
 ## 0.2.0
 
 - Advanced EIS inverse modelling with analytic Jacobian, constrained multistart optimisation, RC/RQ comparison, AICc and local identifiability/uncertainty diagnostics.
