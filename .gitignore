@@ -1,8 +1,0 @@
-__pycache__/
-*.py[cod]
-.venv/
-/summary.json
-build/
-dist/
-*.egg-info/
-study-output/

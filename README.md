@@ -1,56 +1,33 @@
-![Pooria Moozarm Nia — electrochemist, scientific software and automation](assets/profile-banner.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-banner-dark.svg">
+  <img alt="Pooria Moozarm Nia, electrochemist and Principal Scientist in London" src="assets/profile-banner-light.svg">
+</picture>
 
-# Pooria Moozarm Nia
+I'm an electrochemist with a PhD in analytical chemistry and more than ten years in academic and industrial R&D. Most of that time has gone into electrochemical energy: water electrolysis, batteries, fuel cells and redox flow, from electrode materials and impedance diagnostics through to test rigs, stack development and scale-up.
 
-**Electrochemist & Principal Scientist | Electrochemical engineering, software & automation**
+I also write a lot of software. Developing the technology turns out to be only half the job. Someone still has to run the experiments, make sense of the data and keep the whole process working, and that's the part I like building tools for.
 
-I'm an electrochemist with a PhD in Analytical Chemistry and more than a decade of experience in academic and industrial R&D. Most of my work has been in electrochemical energy technologies, from electrode materials and electrochemical diagnostics to test rigs, cell and stack development, and industrial scale-up.
+### What I'm working on in public
 
-I also write software. I often find that developing the technology is only half the job: someone still has to run the experiments, make sense of the data and keep the whole process working. That's the part I enjoy building around.
+<a href="https://github.com/pooriamn/electrochem-toolkit"><img align="right" width="380" alt="Electrochemical Engineering Toolkit" src="assets/electrochem-toolkit.png"></a>
 
-## What I work on
+**[Electrochemical Engineering Toolkit](https://github.com/pooriamn/electrochem-toolkit)** is a Python package for the calculations I keep needing: impedance fitting with proper model comparison, electrolyser stack and electrothermal models, and measurement reports that refuse bad input files. Every equation is written down and every result that matters has a test.
 
-| Electrochemistry & engineering | Software & automation |
+There's also a [browser version](https://pooriamn.github.io/electrochem-toolkit/) where you can drag a constant-phase exponent and watch an impedance arc flatten.
+
+<br clear="right">
+
+### Where my time goes
+
+| In the lab and on the plant | At the keyboard |
 | --- | --- |
-| Water electrolysis, batteries, fuel cells and redox-flow systems | Scientific applications and numerical modelling in Python and MATLAB |
-| Electrode engineering, EIS, kinetics and durability | Impedance fitting, parameter estimation and time-series analysis |
-| Experimental rigs, instrumentation and stack validation | Instrument integration, APIs, data pipelines and automated testing |
-| Process development and industrial scale-up | Engineering dashboards, workflow orchestration and platform development |
+| Water electrolysis (alkaline in particular), batteries, fuel cells, redox flow | Python and MATLAB for modelling and data analysis |
+| Electrode engineering, EIS, kinetics and durability | Impedance fitting, parameter estimation, time-series analysis |
+| Test rigs, instrumentation and stack validation | Instrument integration, data pipelines and automated testing |
+| Process development and industrial scale-up | Engineering dashboards and workflow automation |
 
-I like writing tools that are useful long after the first experiment: code that can be tested, maintained and used by someone else without having to reconstruct the original workflow.
+### Elsewhere
 
-## Public engineering workbench
+Papers are on [Google Scholar](https://scholar.google.com/citations?user=SaiB5-8AAAAJ) and [ORCID](https://orcid.org/0000-0002-3049-3120). I'm on [LinkedIn](https://uk.linkedin.com/in/pooriamn) for work, and on [Instagram](https://www.instagram.com/pooriamn/) when I've been out with a camera, usually photographing architecture, light and perspective.
 
-I've collected the examples into an [installable Python toolkit](toolkit/README.md), with a shared calculation layer, command-line tools and a [browser workbench](docs/toolkit.html). The aim is to make common engineering calculations easy to repeat and integrate into other tools.
-
-[Changelog](CHANGELOG.md) · [Releases](https://github.com/pooriamn/pooriamn/releases) · [Development notes](journal/README.md) · [Reusable snippets](snippets/README.md)
-
-## Selected computational studies
-
-I use these studies to explore two problems that matter in electrochemical engineering: what an impedance spectrum can tell us about a system, and how electrochemical losses affect stack behaviour under changing load.
-
-| Study | Approach |
-| --- | --- |
-| [Electrochemical inverse modelling](studies/eis-inverse/README.md) | Constrained complex nonlinear least squares, analytic Jacobian, model discrimination, multistart fitting and local parameter uncertainty. |
-| [Dynamic electrolyser electrothermal model](studies/electrothermal-stack/README.md) | Thermodynamics, apparent electrode kinetics, temperature-dependent ASR, dynamic heat balance and numerical conservation checks. |
-
-Each study includes the model assumptions, reproducible synthetic inputs, source code, diagnostics and verification tests. Neither uses proprietary measurements or claims industrial validation.
-
-[Explore the computational studies](studies/README.md) · [Introductory examples](projects/README.md)
-
-[![Tests](https://github.com/pooriamn/pooriamn/actions/workflows/verify.yml/badge.svg)](https://github.com/pooriamn/pooriamn/actions/workflows/verify.yml)
-[Run the examples](projects/README.md) · [Portfolio website source](docs/index.html)
-
-## Development activity
-
-![Public development summary](assets/public-activity.svg)
-
-[Public activity details](activity/README.md) · [Issues](https://github.com/pooriamn/pooriamn/issues) · [Pull requests](https://github.com/pooriamn/pooriamn/pulls)
-
-The activity summary reports only this public repository. My private work remains private.
-
-## Publications & profiles
-
-[Google Scholar](https://scholar.google.com/citations?user=SaiB5-8AAAAJ) · [ORCID](https://orcid.org/0000-0002-3049-3120) · [LinkedIn](https://uk.linkedin.com/in/pooriamn) · [Instagram](https://www.instagram.com/pooriamn/)
-
-I'm based in London, UK. Away from work, I spend a fair amount of time with a camera, mostly photographing architecture, light and perspective.
+Based in London. Happy to talk about electrolysis, EIS or lab automation; open an issue on any of my repos or find me on LinkedIn.
