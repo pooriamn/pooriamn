@@ -19,7 +19,7 @@ I also write a lot of software. Developing the technology turns out to be only h
 - [Corrosion rate](https://github.com/pooriamn/electrochem-toolkit/tree/main/studies/corrosion): when Tafel extrapolation and LPR can be trusted, and when they can't
 - [Tafel analysis](https://github.com/pooriamn/electrochem-toolkit/tree/main/studies/tafel-analysis): one sweep, six slopes, and what to report instead
 
-You can also [try it in the browser](https://pooriamn.github.io/electrochem-toolkit/). Drag the constant-phase exponent and watch an impedance arc flatten.
+You can also [try it in the browser](https://pooriamn.github.io/electrochem-toolkit/). Drag the constant-phase exponent and watch an impedance arc flatten. Every release is archived on Zenodo, so it can be cited: [doi:10.5281/zenodo.24407002](https://doi.org/10.5281/zenodo.24407002).
 
 <br clear="right">
 
