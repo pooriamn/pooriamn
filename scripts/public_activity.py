@@ -1,9 +1,12 @@
-"""Generate a public-only activity snapshot without credentials.
+"""Generate a public-only activity snapshot with optional CI authentication.
 
-No private data, account-wide listing, user contribution counts, or raw
-issue/PR text are requested. Failed collection leaves the last snapshot intact.
+Only this explicitly public repository is queried. CI may supply a short-lived
+GitHub token to avoid anonymous rate limits; no private data, account-wide
+listing, user contribution counts or issue/PR text are requested.
+Failed collection leaves the last snapshot intact.
 """
 import json
+import os
 import re
 import urllib.request
 from pathlib import Path
@@ -14,11 +17,17 @@ ROOT = Path(__file__).resolve().parents[1]
 TAG = re.compile(r"v?[0-9]+\.[0-9]+\.[0-9]+(?:[-.][A-Za-z0-9.-]+)?\Z")
 
 def get(path):
-    # Do not send a token; public visibility is checked independently.
-    request = urllib.request.Request(API+path, headers={
-        "Accept":"application/vnd.github+json",
-        "User-Agent":"public-engineering-portfolio",
-        "X-GitHub-Api-Version":"2022-11-28"})
+    # The URL is fixed to this public repository; the response is checked
+    # again by collect() before any statistic is published.
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "public-engineering-portfolio",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = "Bearer " + token
+    request = urllib.request.Request(API + path, headers=headers)
     with urllib.request.urlopen(request,timeout=15) as response:
         return json.load(response)
 
