@@ -32,7 +32,11 @@ print(result["dc_specific_energy_kWh_kg"])
 | stack | DC stack balance, Faradaic hydrogen production, specific energy |
 | battery | Signed-current charge/discharge throughput, zero-crossing integration |
 | polarisation | Linear Tafel regression for a manually selected valid region |
-| pipeline | Validated CSV processing, energy integration, atomic JSON reports |
+| pipeline | Validated CSV processing, energy and charge integration, atomic JSON reports |
+
+## Experimental energy and charge accounting
+
+The `report` command accepts synthetic or user-provided CSV data with exactly `time_s,voltage_V,current_A` columns and strictly increasing timestamps. Both voltage and current must be finite and non-negative. It reports `energy_Wh` (trapezoidal integration of measured endpoint powers), `charge_Ah` (independent trapezoidal integration of current) and `mean_current_A` (integrated charge divided by elapsed time), alongside the existing fields. Irregular sampling is handled using actual time intervals, but **missing transients are not reconstructed**. Charge alone does not establish Faradaic efficiency or hydrogen production. See the [standalone experimental example](../projects/experimental-pipeline/README.md).
 
 ## Advanced computational studies
 
@@ -49,4 +53,4 @@ The [browser workbench](../docs/toolkit.html) provides independent JavaScript de
 
 ## Scope
 
-Version 0.2.0 includes introductory tools and advanced synthetic computational studies. This is not a general EIS fitting package, a battery state estimator, an electrolyser design model or a control system. Tafel region selection and measurement validity remain the user's responsibility. No private company code or data are included. For scientific or engineering sign-off, validate the model against independent reference data and the intended operating conditions.
+Version 0.3.0 includes introductory tools, charge-aware CSV reports and advanced synthetic computational studies. This is not a general EIS fitting package, a battery state estimator, an electrolyser design model or a control system. Tafel region selection and measurement validity remain the user's responsibility. No private company code or data are included. For scientific or engineering sign-off, validate the model against independent reference data and the intended operating conditions.
