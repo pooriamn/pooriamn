@@ -11,7 +11,7 @@ I also write a lot of software. Developing the technology turns out to be only h
 
 <a href="https://github.com/pooriamn/electrochem-toolkit"><img align="right" width="380" alt="Electrochemical Engineering Toolkit" src="assets/electrochem-toolkit.png"></a>
 
-**[Electrochemical Engineering Toolkit](https://github.com/pooriamn/electrochem-toolkit)** is a Python package for the calculations I keep needing: impedance fitting with proper model comparison, electrolyser stack and electrothermal models, and measurement reports that refuse bad input files. Every equation is written down and every result that matters has a test.
+**[Electrochemical Engineering Toolkit](https://github.com/pooriamn/electrochem-toolkit)** is a Python package for the calculations I keep needing: impedance fitting with proper model comparison, electrolyser and flow battery models, corrosion rates and Tafel analysis done carefully, and measurement reports that refuse bad input files. Every equation is written down and every result that matters has a test.
 
 There's also a [browser version](https://pooriamn.github.io/electrochem-toolkit/) where you can drag a constant-phase exponent and watch an impedance arc flatten.
 
