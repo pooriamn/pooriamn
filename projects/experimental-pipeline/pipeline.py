@@ -27,16 +27,19 @@ def summarise(raw):
             raise ValueError("Values must be finite and non-negative")
         if points and t <= points[-1][0]:
             raise ValueError("Timestamps must strictly increase")
-        points.append((t, v*i))
+        points.append((t, v*i, i))
     if len(points) < 2:
         raise ValueError("At least two measurements required")
     energy_j = sum((b[0]-a[0])*(a[1]+b[1])/2 for a,b in zip(points, points[1:]))
-    if not math.isfinite(energy_j):
-        raise ValueError("Energy calculation overflow")
+    charge_c = sum((b[0]-a[0])*(a[2]+b[2])/2 for a,b in zip(points, points[1:]))
+    if not all(math.isfinite(x) for x in (energy_j, charge_c)):
+        raise ValueError("Energy or charge calculation overflow")
     duration = points[-1][0] - points[0][0]
     return {"source_sha256": hashlib.sha256(raw).hexdigest(), "sample_count": len(points),
             "duration_s": duration, "energy_Wh": energy_j / 3600,
-            "mean_power_W": energy_j / duration}
+            "mean_power_W": energy_j / duration,
+            "charge_Ah": charge_c / 3600,
+            "mean_current_A": charge_c / duration}
 
 def publish(source, destination):
     source, destination = Path(source), Path(destination)
